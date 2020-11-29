@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[superman.qt-translation-021x]
+file_filter = src/qt/locale/superman_<lang>.ts
+source_file = src/qt/locale/superman_en.ts
+source_lang = en

@@ -1,0 +1,33 @@
+# /etc/conf.d/supermand: config file for /etc/init.d/supermand
+
+# Config file location
+#SUPERMAND_CONFIGFILE="/etc/superman/superman.conf"
+
+# What directory to write pidfile to?  (created and owned by $SUPERMAND_USER)
+#SUPERMAND_PIDDIR="/var/run/supermand"
+
+# What filename to give the pidfile
+#SUPERMAND_PIDFILE="${SUPERMAND_PIDDIR}/supermand.pid"
+
+# Where to write supermand data (be mindful that the blockchain is large)
+#SUPERMAND_DATADIR="/var/lib/supermand"
+
+# User and group to own supermand process
+#SUPERMAND_USER="superman"
+#SUPERMAND_GROUP="superman"
+
+# Path to supermand executable
+#SUPERMAND_BIN="/usr/bin/supermand"
+
+# Nice value to run supermand under
+#SUPERMAND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#SUPERMAND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for supermand to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+SUPERMAND_SIGTERM_TIMEOUT=600
